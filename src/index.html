@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'">
+<title>EV3 Direct Control</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="main">
+    <div id="left">
+      <div id="hdr"></div>
+      <div id="monitor" class="card"></div>
+    </div>
+    <div id="modecard" class="card">
+      <div id="modetabs"></div>
+      <div id="profrow"></div>
+      <div id="padsec">
+        <div id="padbar"></div>
+        <div id="padwrap"><canvas id="padcv"></canvas><div id="nopad"></div></div>
+        <div id="padcount"></div>
+      </div>
+      <div id="virtsec">
+        <div id="virtbar"></div>
+        <div id="stagemain" class="stagehost"></div>
+        <div id="virthint"></div>
+      </div>
+    </div>
+  </div>
+  <div id="full"><div id="fulltop"></div><div id="fullline"></div><div id="stagefull" class="stagehost"></div></div>
+</div>
+<div id="overlay"></div>
+<script src="skin_paths.js"></script>
+<script src="model.js"></script>
+<script src="skins.js"></script>
+<script src="core.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
